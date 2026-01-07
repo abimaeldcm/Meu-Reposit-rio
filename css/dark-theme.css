@@ -1,0 +1,384 @@
+/* =======================================================
+   TEMA ESCURO - Dark Mode
+   ======================================================= */
+
+:root {
+  /* Cores do tema escuro */
+  --dark-bg-primary: #0a0a0a;
+  --dark-bg-secondary: #1a1a1a;
+  --dark-bg-card: #242424;
+  --dark-text-primary: #e0e0e0;
+  --dark-text-secondary: #b0b0b0;
+  --dark-border: #333333;
+  --dark-shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* Aplicar tema escuro */
+body {
+  background-color: var(--dark-bg-primary) !important;
+  color: var(--dark-text-primary) !important;
+}
+
+/* Navegação */
+.navbar-b.navbar-reduce {
+  background-color: var(--dark-bg-secondary) !important;
+  box-shadow: 0 4px 8px var(--dark-shadow);
+}
+
+.navbar-b.navbar-reduce .nav-link {
+  color: var(--dark-text-primary) !important;
+}
+
+.navbar-b.navbar-reduce .navbar-brand {
+  color: var(--dark-text-primary) !important;
+}
+
+.navbar-b.navbar-trans .nav-link {
+  color: var(--dark-text-primary) !important;
+}
+
+.navbar-b.navbar-trans .navbar-brand {
+  color: var(--dark-text-primary) !important;
+}
+
+/* Cards e Boxes */
+.box-shadow-full,
+.service-box,
+.card-blog,
+.work-box {
+  background-color: var(--dark-bg-card) !important;
+  color: var(--dark-text-primary) !important;
+  border: 1px solid var(--dark-border);
+}
+
+/* Textos */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-text-primary) !important;
+}
+
+.title-a,
+.title-left,
+.title-s {
+  color: var(--dark-text-primary) !important;
+}
+
+.subtitle-a,
+.s-description,
+.card-description,
+.lead,
+p {
+  color: var(--dark-text-secondary) !important;
+}
+
+/* Formulários */
+.form-control {
+  background-color: var(--dark-bg-secondary) !important;
+  border-color: var(--dark-border) !important;
+  color: var(--dark-text-primary) !important;
+}
+
+.form-control:focus {
+  background-color: var(--dark-bg-secondary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--dark-text-primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 120, 255, 0.25);
+}
+
+.form-control::placeholder {
+  color: var(--dark-text-secondary) !important;
+}
+
+/* Progress bars */
+.progress {
+  background-color: var(--dark-bg-secondary) !important;
+}
+
+/* Links */
+a {
+  color: var(--color-primary) !important;
+}
+
+a:hover {
+  color: var(--color-primary-light) !important;
+}
+
+/* List items */
+.list-ico span {
+  color: var(--color-primary) !important;
+}
+
+.list-ico li {
+  color: var(--dark-text-secondary) !important;
+}
+
+/* Botões */
+.button {
+  background-color: var(--color-primary) !important;
+  color: white !important;
+}
+
+.button:hover {
+  background-color: var(--color-primary-dark) !important;
+}
+
+/* Footer */
+footer {
+  background-color: transparent !important;
+  color: var(--dark-text-secondary) !important;
+}
+
+footer a {
+  color: var(--color-primary) !important;
+}
+
+/* Intro section - manter overlay escuro */
+.intro {
+  background-color: var(--dark-bg-primary);
+}
+
+.overlay-itro {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Counter section */
+.section-counter {
+  background-color: var(--dark-bg-secondary) !important;
+}
+
+.overlay-mf {
+  background-color: rgba(0, 120, 255, 0.8) !important;
+}
+
+/* Work box hover */
+.work-content {
+  background-color: var(--dark-bg-card) !important;
+}
+
+.w-title {
+  color: var(--dark-text-primary) !important;
+}
+
+.w-more {
+  color: var(--dark-text-secondary) !important;
+}
+
+/* Card blog */
+.card-body {
+  background-color: var(--dark-bg-card) !important;
+}
+
+.card-title a {
+  color: var(--dark-text-primary) !important;
+}
+
+.card-footer {
+  background-color: var(--dark-bg-card) !important;
+  border-top: 1px solid var(--dark-border) !important;
+}
+
+.author,
+.post-date {
+  color: var(--dark-text-secondary) !important;
+}
+
+/* Preloader */
+#preloader {
+  background: var(--dark-bg-primary) !important;
+}
+
+#preloader:before {
+  border: 6px solid var(--dark-bg-secondary);
+  border-top: 6px solid var(--color-primary);
+}
+
+/* Back to top */
+.back-to-top {
+  background: var(--color-primary) !important;
+  color: white !important;
+}
+
+.back-to-top:hover {
+  background: var(--color-primary-dark) !important;
+}
+
+/* Mensagens do formulário */
+#sendmessage {
+  background-color: rgba(0, 120, 255, 0.1) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--dark-text-primary) !important;
+}
+
+#errormessage {
+  background-color: rgba(220, 53, 69, 0.1) !important;
+  border-color: #dc3545 !important;
+  color: #ff6b6b !important;
+}
+
+.validation {
+  color: #ff6b6b !important;
+}
+
+/* Social icons */
+.socials .ico-circle {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 3px var(--color-primary) !important;
+  color: var(--color-primary) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.socials .ico-circle i {
+  font-size: 1.7rem !important;
+  display: block !important;
+}
+
+.socials .ico-circle:hover {
+  background-color: var(--color-primary) !important;
+  color: white !important;
+}
+
+/* Garantir que Font Awesome ícones apareçam */
+.fa, 
+.fa-brands, 
+.fa-solid,
+[class^="fa-"], 
+[class*=" fa-"],
+i.fa {
+  font-family: "FontAwesome" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1 !important;
+  display: inline-block !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+}
+
+/* Ícones nos círculos */
+.ico-circle i {
+  font-size: inherit !important;
+  display: block !important;
+  line-height: inherit !important;
+  width: 100% !important;
+}
+
+/* Service icons específicos */
+.service-box .ico-circle i {
+  font-size: 4rem !important;
+  display: block !important;
+}
+
+/* Counter icons */
+.counter-ico .ico-circle i {
+  font-size: 2rem !important;
+  display: block !important;
+}
+
+/* Social icons */
+.socials .ico-circle i {
+  font-size: 1.7rem !important;
+  display: block !important;
+  line-height: 1.4 !important;
+}
+
+/* Play overlay icons */
+.play-overlay i {
+  font-size: 40px !important;
+  display: block !important;
+  color: white !important;
+}
+
+/* Garantir que ícones específicos apareçam */
+.fa-code:before { content: "\f121"; }
+.fa-cloud:before { content: "\f0c2"; }
+.fa-desktop:before { content: "\f108"; }
+.fa-cog:before { content: "\f013"; }
+.fa-database:before { content: "\f1c0"; }
+.fa-pencil:before { content: "\f040"; }
+.fa-check:before { content: "\f00c"; }
+.fa-calendar:before { content: "\f073"; }
+.fa-users:before { content: "\f0c0"; }
+.fa-trophy:before { content: "\f091"; }
+.fa-plus:before { content: "\f067"; }
+.fa-play-circle:before { content: "\f01d"; }
+.fa-clock-o:before { content: "\f017"; }
+.fa-chevron-up:before { content: "\f077"; }
+.fa-github:before { content: "\f09b"; }
+.fa-whatsapp:before { content: "\f232"; }
+.fa-envelope:before { content: "\f0e0"; }
+.fa-file-text:before { content: "\f15c"; }
+.fa-map-marker:before { content: "\f041"; }
+.fa-phone:before { content: "\f095"; }
+.fa-chevron-left:before { content: "\f053"; }
+.fa-chevron-right:before { content: "\f054"; }
+
+/* Service icons */
+.service-box .ico-circle {
+  color: var(--color-primary) !important;
+  box-shadow: none !important;
+}
+
+/* Efeito hover removido - apenas ícone e círculo */
+
+/* Counter icons */
+.counter-box {
+  color: var(--dark-text-primary) !important;
+}
+
+.counter-ico .ico-circle {
+  box-shadow: 0 0 0 10px rgba(0, 120, 255, 0.1) !important;
+}
+
+/* Scrollbar personalizada para tema escuro */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-border);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Seleção de texto */
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Fallback para imagens de fundo que não existem */
+.section-counter.bg-image,
+.footer-paralax.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Se a imagem não carregar, usar gradiente escuro */
+.section-counter.bg-image::before,
+.footer-paralax.bg-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  z-index: -1;
+}

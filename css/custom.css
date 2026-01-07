@@ -1,0 +1,1372 @@
+/* =======================================================
+   CSS CUSTOMIZADO - Melhorias e Otimizações
+   ======================================================= */
+
+/* Usar variáveis CSS quando possível */
+:root {
+  font-family: var(--font-family-base, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+}
+
+/* Scroll suave para toda a página */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* Melhorias de acessibilidade */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Melhorias para formulários */
+.form-control.is-invalid {
+  border-color: #dc3545;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath d='m5.8 3.6 .4.4.4-.4m0 4.8-.4-.4-.4.4'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.form-control.is-invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Tema Escuro - Ajustes Gerais */
+body {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+/* Ajustes de cores para textos */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+p, span, div {
+  color: #e0e0e0;
+}
+
+/* Ajustes para seções */
+.sect-pt4 {
+  background-color: #1e1e1e;
+}
+
+.route {
+  background-color: #1e1e1e;
+}
+
+/* Ajustes para boxes */
+.box-shadow-full {
+  background-color: #2d2d2d;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajustes para títulos */
+.title-a {
+  color: #ffffff;
+}
+
+.subtitle-a {
+  color: #b0b0b0;
+}
+
+/* Melhorias de performance - will-change */
+.work-box,
+.service-box,
+.card-blog {
+  will-change: transform;
+}
+
+/* Ajustes para ícones - Alinhamento vertical */
+.service-box .service-ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.service-box .ico-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  line-height: 1;
+  border-radius: 50%;
+  background-color: #2d2d2d;
+  color: #0078ff;
+  font-size: 2.5rem;
+  margin: 0 auto;
+}
+
+/* Removido efeito hover dos ícones - apenas ícone e círculo */
+
+/* Ajustes para service-box */
+.service-box {
+  background-color: #2d2d2d;
+  color: #f5f5f5;
+  border: 1px solid #3d3d3d;
+}
+
+.service-box .s-title {
+  color: #ffffff;
+}
+
+.service-box .s-description {
+  color: #d0d0d0;
+}
+
+/* Ajustes para work-box */
+.work-box {
+  background-color: #2d2d2d;
+  border: 1px solid #3d3d3d;
+}
+
+.work-content {
+  background-color: #2d2d2d;
+}
+
+.work-content .w-title {
+  color: #ffffff;
+}
+
+.work-content .w-more {
+  color: #b0b0b0;
+}
+
+/* Ajustes para about section */
+.about-info p {
+  color: #e0e0e0;
+}
+
+.about-info .title-s {
+  color: #0078ff;
+  font-weight: 600;
+}
+
+.about-info span:not(.title-s) {
+  color: #d0d0d0;
+}
+
+.about-info a {
+  color: #0078ff;
+  text-decoration: none;
+}
+
+.about-info a:hover {
+  color: #4da3ff;
+  text-decoration: underline;
+}
+
+/* Seção Soft Skills */
+.soft-skills-mf {
+  background-color: #1e1e1e;
+  padding: 4rem 0;
+}
+
+.soft-skills-mf .title-a {
+  color: #ffffff;
+}
+
+.soft-skills-mf .subtitle-a {
+  color: #b0b0b0;
+}
+
+/* Carrossel de Habilidades Técnicas */
+.skills-carousel-section {
+  margin-top: 2rem;
+  padding: 0 15px;
+}
+
+.skills-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #0078ff;
+}
+
+.skills-carousel {
+  margin-top: 1.5rem;
+}
+
+.skill-icon-item {
+  padding: 5px 10px;
+}
+
+.skill-icon-box {
+  background-color: #2d2d2d;
+  border: 2px solid #3d3d3d;
+  border-radius: 0.75rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+}
+
+.skill-icon-box:hover {
+  border-color: #0078ff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 120, 255, 0.3);
+  background-color: #333333;
+}
+
+.skill-icon-box i {
+  font-size: 2.5rem;
+  color: #0078ff;
+  margin-bottom: 0.75rem;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.skill-icon-box:hover i {
+  color: #4da3ff;
+  transform: scale(1.1);
+}
+
+.skill-svg-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.75rem;
+  display: block;
+  transition: all 0.3s ease;
+  object-fit: contain;
+  /* Aplicar cor azul (#0078ff) aos SVGs */
+  filter: brightness(0) saturate(100%) invert(27%) sepia(100%) saturate(7500%) hue-rotate(200deg) brightness(100%) contrast(100%);
+}
+
+.skill-icon-box:hover .skill-svg-icon {
+  transform: scale(1.1);
+  /* Cor azul mais clara no hover (#4da3ff) */
+  filter: brightness(0) saturate(100%) invert(60%) sepia(100%) saturate(7500%) hue-rotate(200deg) brightness(100%) contrast(100%);
+}
+
+.skill-icon-name {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.3;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Owl Carousel para habilidades */
+#skills-carousel.owl-carousel .owl-item {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+#skills-carousel.owl-carousel .owl-item.active {
+  opacity: 1;
+}
+
+#skills-carousel.owl-carousel .owl-nav {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#skills-carousel.owl-carousel .owl-nav button {
+  background-color: #0078ff !important;
+  color: white !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+#skills-carousel.owl-carousel .owl-nav button:hover {
+  background-color: #0062d3 !important;
+  transform: scale(1.15) translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 120, 255, 0.4);
+}
+
+#skills-carousel.owl-carousel .owl-nav button:active {
+  transform: scale(1.05);
+}
+
+#skills-carousel.owl-carousel .owl-dots {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#skills-carousel.owl-carousel .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4d4d4d !important;
+  margin: 0 5px;
+  padding: 0 !important;
+  border: 2px solid transparent !important;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+}
+
+#skills-carousel.owl-carousel .owl-dots .owl-dot:hover {
+  background-color: #6d6d6d !important;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+#skills-carousel.owl-carousel .owl-dots .owl-dot.active {
+  background-color: #0078ff !important;
+  width: 32px !important;
+  height: 10px !important;
+  border-radius: 5px !important;
+  opacity: 1 !important;
+}
+
+/* Sobrescrever estilos do owl-theme para skills */
+#skills-carousel.owl-theme .owl-dots .owl-dot span {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #4d4d4d !important;
+  margin: 0 !important;
+  opacity: 0.6 !important;
+}
+
+#skills-carousel.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #0078ff !important;
+  width: 32px !important;
+  height: 10px !important;
+  border-radius: 5px !important;
+  opacity: 1 !important;
+}
+
+/* Responsividade para habilidades */
+@media (max-width: 768px) {
+  .skill-icon-box {
+    padding: 1.25rem 0.875rem;
+    min-height: 120px;
+  }
+  
+  .skill-icon-box i {
+    font-size: 2rem;
+  }
+  
+  .skill-icon-name {
+    font-size: 0.85rem;
+  }
+}
+
+/* Ajustes para navbar */
+.navbar {
+  background-color: rgba(30, 30, 30, 0.95);
+}
+
+.navbar-brand-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(100%) saturate(7500%) hue-rotate(200deg) brightness(100%) contrast(100%);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover .navbar-brand-icon {
+  filter: brightness(0) saturate(100%) invert(60%) sepia(100%) saturate(7500%) hue-rotate(200deg) brightness(100%) contrast(100%);
+}
+
+.navbar-brand,
+.nav-link {
+  color: #f5f5f5 !important;
+}
+
+.nav-link:hover {
+  color: #0078ff !important;
+}
+
+.nav-link.active {
+  color: #0078ff !important;
+}
+
+/* Ajustes para footer */
+.footer-paralax {
+  background-color: #1a1a1a;
+  color: #b0b0b0;
+}
+
+.copyright {
+  color: #b0b0b0;
+}
+
+.credits {
+  color: #808080;
+}
+
+/* Ajustes para intro section */
+.intro-title {
+  color: #ffffff;
+}
+
+.intro-subtitle {
+  color: #d0d0d0;
+  font-size: 1.1rem;
+}
+
+.color-d {
+  color: #0078ff;
+}
+
+/* Ajustes para botões */
+.btn-primary {
+  background-color: #0078ff;
+  border-color: #0078ff;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #0062d3;
+  border-color: #0062d3;
+  color: #ffffff;
+}
+
+/* Estilo específico para o botão "Saiba Mais" na seção intro */
+.intro .btn-primary {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.intro .btn-primary:hover {
+  background-color: #0078ff;
+  border-color: #0078ff;
+  color: #ffffff;
+}
+
+/* Ajustes para cards de blog */
+.card-blog {
+  background-color: #2d2d2d;
+  border: 1px solid #3d3d3d;
+  color: #f5f5f5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-blog .card-img {
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%; /* Aspect ratio 5:3 */
+  position: relative;
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
+
+.card-blog .card-img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-blog .card-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.card-blog .card-img:hover img {
+  transform: scale(1.05);
+}
+
+.card-blog .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.card-blog .card-title {
+  color: #ffffff;
+}
+
+.card-blog .card-title a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card-blog .card-title a:hover {
+  color: #0078ff;
+}
+
+.card-blog .card-text,
+.card-blog .card-description {
+  color: #d0d0d0;
+  flex: 1;
+}
+
+.card-blog .card-footer {
+  padding: 1rem 1.5rem;
+  background-color: #252525;
+  border-top: 1px solid #3d3d3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-blog .post-author .author {
+  color: #b0b0b0;
+}
+
+.card-blog .post-date {
+  color: #b0b0b0;
+}
+
+/* Ajustes para seção de vídeos */
+.videos-mf {
+  background-color: #1e1e1e;
+}
+
+.video-item {
+  background-color: #2d2d2d;
+  border: 1px solid #3d3d3d;
+}
+
+.video-title {
+  color: #ffffff;
+}
+
+.video-description {
+  color: #b0b0b0;
+}
+
+/* Ajustes para seção de artigos/blog */
+.blog-mf {
+  background-color: #1e1e1e;
+}
+
+/* Ajustes para Typed.js cursor */
+.typed-cursor {
+  color: #0078ff;
+  opacity: 1;
+  animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+  50% { opacity: 0; }
+}
+
+/* Transições suaves */
+a,
+button,
+.service-box,
+.work-box {
+  transition: var(--transition-normal, all 0.5s ease-in-out);
+}
+
+/* Melhorias de contraste para acessibilidade */
+.navbar-brand,
+.nav-link {
+  font-weight: var(--font-weight-semibold, 600);
+}
+
+/* Focus visível para acessibilidade */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--color-primary, #0078ff);
+  outline-offset: 2px;
+}
+
+/* Skip to main content (melhoria de acessibilidade) */
+.skip-to-main {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary, #0078ff);
+  color: var(--color-text-white, #fff);
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-to-main:focus {
+  top: 0;
+}
+
+/* Lazy loading - placeholder enquanto carrega */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+/* Melhorias de responsividade */
+@media (max-width: 768px) {
+  .intro .intro-title {
+    font-size: 2.5rem !important;
+  }
+  
+  .intro .intro-subtitle {
+    font-size: 1.5rem !important;
+  }
+  
+  .title-a {
+    font-size: 2rem !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .back-to-top,
+  .scrolltop-mf,
+  footer {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  a {
+    color: black !important;
+    text-decoration: underline !important;
+  }
+}
+
+/* Reduzir movimento para usuários que preferem */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Melhorias de performance - contain */
+.service-box,
+.work-box,
+.card-blog {
+  contain: layout style paint;
+}
+
+/* Melhorias de acessibilidade - contraste melhorado */
+.counter-text,
+.subtitle-a {
+  color: var(--color-text-secondary, #4e4e4e);
+}
+
+/* Melhorias para telas grandes */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Melhorias de performance - GPU acceleration */
+.work-box:hover img {
+  transform: translateZ(0);
+}
+
+/* Ajustes para imagens do portfolio */
+.work-img {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; /* Aspect ratio 4:3 */
+  position: relative;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+.work-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 1s ease;
+}
+
+.work-box:hover .work-img img {
+  transform: scale(1.3);
+}
+
+/* Estilos para o modal de experiência profissional - Tema Escuro */
+#experienceModal .modal-content {
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  color: #f5f5f5;
+}
+
+#experienceModal .modal-header {
+  background-color: #2d2d2d;
+  border-bottom: 2px solid #0078ff;
+  padding: 1.5rem 2rem;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+#experienceModal .modal-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#experienceModal .close {
+  color: #f5f5f5;
+  opacity: 0.8;
+  text-shadow: none;
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+#experienceModal .close:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
+#experienceModal .modal-body {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  color: #f5f5f5;
+}
+
+#experienceModal .modal-footer {
+  background-color: #2d2d2d;
+  border-top: 1px solid #3d3d3d;
+  padding: 1rem 2rem;
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+
+#experienceModal .experience-details {
+  padding: 0;
+}
+
+#experienceModal .experience-company {
+  color: #0078ff;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  text-shadow: 0 2px 4px rgba(0, 120, 255, 0.3);
+}
+
+#experienceModal .experience-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+#experienceModal .experience-title {
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  background-color: #0078ff;
+  color: #ffffff;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+#experienceModal .experience-period,
+#experienceModal .experience-location {
+  color: #b0b0b0;
+  font-size: 1rem;
+}
+
+#experienceModal .experience-site,
+#experienceModal .experience-site-youtube {
+  color: #d0d0d0;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #2d2d2d;
+  border-radius: 0.5rem;
+  border-left: 3px solid #0078ff;
+  margin-bottom: 1rem;
+}
+
+#experienceModal .experience-site strong,
+#experienceModal .experience-site-youtube strong {
+  color: #ffffff;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+#experienceModal .site-link {
+  color: #0078ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#experienceModal .site-link:hover {
+  color: #4da3ff;
+  text-decoration: underline;
+}
+
+#experienceModal .youtube-link {
+  color: #ff0000;
+}
+
+#experienceModal .youtube-link:hover {
+  color: #ff4444;
+}
+
+#experienceModal .youtube-link i {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
+
+#experienceModal .experience-description {
+  color: #e0e0e0;
+  line-height: 1.9;
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  text-align: justify;
+}
+
+#experienceModal .btn-secondary {
+  background-color: #3d3d3d;
+  border-color: #4d4d4d;
+  color: #ffffff;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+#experienceModal .btn-secondary:hover {
+  background-color: #4d4d4d;
+  border-color: #5d5d5d;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Backdrop do modal mais escuro */
+.modal-backdrop.show {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  opacity: 0.95 !important;
+}
+
+#experienceModal.modal.fade .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+/* Animação suave para abertura do modal */
+#experienceModal.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -50px);
+}
+
+#experienceModal.modal.show .modal-dialog {
+  transform: translate(0, 0);
+}
+
+/* Melhorias de acessibilidade - aria-live regions */
+[aria-live] {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#sendmessage[aria-live],
+#errormessage[aria-live] {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+/* =======================================================
+   ANIMAÇÕES E EFEITOS FLUIDOS
+   ======================================================= */
+
+/* Animações suaves para cards de experiências profissionais */
+.work-box {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.work-box:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 120, 255, 0.2);
+}
+
+.work-box .work-img {
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+
+.work-box .work-img img {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+
+.work-box:hover .work-img img {
+  transform: scale(1.1);
+}
+
+.work-box .work-content {
+  transition: all 0.3s ease;
+}
+
+.work-box:hover .work-content {
+  transform: translateY(-2px);
+}
+
+.work-box .w-like {
+  transition: all 0.3s ease;
+  transform: scale(1) rotate(0deg);
+}
+
+.work-box:hover .w-like {
+  transform: scale(1.2) rotate(90deg);
+  color: #0078ff;
+}
+
+/* Animações para cards de vídeos */
+.video-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 120, 255, 0.25);
+}
+
+.video-card .video-thumbnail {
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.video-card .video-thumbnail img {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+
+.video-card:hover .video-thumbnail img {
+  transform: scale(1.15);
+}
+
+.video-card .play-overlay {
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.video-card:hover .play-overlay {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.video-card .video-info {
+  transition: all 0.3s ease;
+}
+
+.video-card:hover .video-info {
+  transform: translateY(-3px);
+}
+
+.video-card:hover .video-title {
+  color: #0078ff;
+}
+
+/* Animações para cards de blog/artigos */
+.card-blog {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-blog:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 120, 255, 0.2);
+  border-color: #0078ff;
+}
+
+.card-blog .card-body {
+  transition: all 0.3s ease;
+}
+
+.card-blog:hover .card-body {
+  transform: translateY(-2px);
+}
+
+.card-blog .card-title a {
+  transition: color 0.3s ease;
+}
+
+.card-blog:hover .card-title a {
+  color: #0078ff;
+}
+
+/* Animações para botões */
+.btn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 120, 255, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Animações para links do menu */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #0078ff;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 80%;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+}
+
+/* Animações para o logo/brand no menu */
+.navbar-brand {
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-brand:hover {
+  transform: translateY(-2px);
+}
+
+.navbar-brand-icon {
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover .navbar-brand-icon {
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* Animações para imagens de perfil */
+.about-img img {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+
+.about-img:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 120, 255, 0.3);
+}
+
+/* Animações para ícones de serviços */
+.service-box {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+}
+
+.service-box:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 120, 255, 0.2);
+}
+
+.service-box .service-ico {
+  transition: all 0.4s ease;
+}
+
+.service-box:hover .service-ico {
+  transform: scale(1.15) rotate(5deg);
+}
+
+.service-box .service-ico i {
+  transition: all 0.3s ease;
+}
+
+.service-box:hover .service-ico i {
+  transform: scale(1.2);
+  color: #0078ff;
+}
+
+/* Animações para títulos */
+.title-a {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.title-a::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #0078ff, transparent);
+  transition: width 0.3s ease;
+}
+
+.title-a:hover::after {
+  width: 120px;
+}
+
+/* Animações para seções */
+.sect-pt4 {
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito de brilho nos cards ao hover */
+.skill-icon-box,
+.work-box,
+.video-card,
+.card-blog,
+.service-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-icon-box::before,
+.work-box::before,
+.video-card::before,
+.card-blog::before,
+.service-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 120, 255, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.skill-icon-box:hover::before,
+.work-box:hover::before,
+.video-card:hover::before,
+.card-blog:hover::before,
+.service-box:hover::before {
+  opacity: 1;
+}
+
+/* Animação de entrada suave para elementos */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.work-box,
+.video-card,
+.card-blog,
+.service-box,
+.skill-icon-item {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Animação de pulso para elementos importantes */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.color-d {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Animações para botão "back to top" */
+.back-to-top,
+.scrolltop-mf {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+
+.back-to-top:hover,
+.scrolltop-mf:hover {
+  transform: scale(1.15) translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 120, 255, 0.4);
+}
+
+.back-to-top:active,
+.scrolltop-mf:active {
+  transform: scale(1.05);
+}
+
+/* Animações para carrossel de vídeos */
+#videos-carousel.owl-carousel .owl-nav button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#videos-carousel.owl-carousel .owl-nav button:hover {
+  transform: scale(1.15) translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 120, 255, 0.4);
+}
+
+#videos-carousel.owl-carousel .owl-dots .owl-dot {
+  transition: all 0.3s ease;
+}
+
+#videos-carousel.owl-carousel .owl-dots .owl-dot:hover {
+  transform: scale(1.3);
+}
+
+/* Animações para modal */
+.modal-content {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.modal.show .modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  transition: all 0.3s ease;
+}
+
+/* Animações para links */
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  transform: translateY(-1px);
+}
+
+/* Animações para inputs e formulários */
+.form-control {
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 120, 255, 0.2);
+}
+
+/* Efeito de loading suave */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.loading {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(
+    to right,
+    #2d2d2d 0%,
+    #3d3d3d 50%,
+    #2d2d2d 100%
+  );
+  background-size: 1000px 100%;
+}
+
+/* Melhorias de performance */
+.work-box,
+.video-card,
+.card-blog,
+.service-box,
+.skill-icon-box {
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}

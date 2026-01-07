@@ -1,0 +1,69 @@
+/* =======================================================
+   Font Awesome Fix - Garantir que ícones apareçam
+   ======================================================= */
+
+/* Importar Font Awesome se CDN falhar */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+       url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+       url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Garantir que todos os elementos com classe fa- usem FontAwesome */
+[class^="fa-"]:before,
+[class*=" fa-"]:before,
+.fa:before,
+i[class*="fa-"]:before,
+i.fa:before {
+  font-family: "FontAwesome" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  display: inline-block !important;
+  text-decoration: inherit !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Garantir que ícones dentro de elementos específicos apareçam */
+.ico-circle .fa,
+.service-box .fa,
+.counter-ico .fa,
+.socials .fa,
+.play-overlay .fa,
+.navbar-toggler .fa,
+.back-to-top .fa {
+  display: inline-block !important;
+  font-family: "FontAwesome" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  line-height: 1 !important;
+}
+
+/* Forçar exibição de ícones específicos com fallback */
+.fa-code::before { content: "\f121"; }
+.fa-cloud::before { content: "\f0c2"; }
+.fa-desktop::before { content: "\f108"; }
+.fa-cog::before { content: "\f013"; }
+.fa-database::before { content: "\f1c0"; }
+.fa-pencil::before { content: "\f040"; }
+.fa-check::before { content: "\f00c"; }
+.fa-calendar::before { content: "\f073"; }
+.fa-users::before { content: "\f0c0"; }
+.fa-trophy::before { content: "\f091"; }
+.fa-plus::before { content: "\f067"; }
+.fa-play-circle::before { content: "\f01d"; }
+.fa-clock-o::before { content: "\f017"; }
+.fa-chevron-up::before { content: "\f077"; }
+.fa-github::before { content: "\f09b"; }
+.fa-whatsapp::before { content: "\f232"; }
+.fa-envelope::before { content: "\f0e0"; }
+.fa-file-text::before { content: "\f15c"; }
+.fa-map-marker::before { content: "\f041"; }
+.fa-phone::before { content: "\f095"; }
+.fa-chevron-left::before { content: "\f053"; }
+.fa-chevron-right::before { content: "\f054"; }
+

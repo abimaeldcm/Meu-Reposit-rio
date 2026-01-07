@@ -1,0 +1,302 @@
+/* =======================================================
+   Carrossel de Vídeos - Estilos
+   ======================================================= */
+
+.videos-mf {
+  padding: 4rem 0;
+  overflow: hidden !important;
+}
+
+/* Container do carrossel - remover scrollbars */
+.videos-mf .container,
+.videos-mf .row,
+.videos-mf .col-md-12 {
+  overflow: hidden !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+.videos-mf .container::-webkit-scrollbar,
+.videos-mf .row::-webkit-scrollbar,
+.videos-mf .col-md-12::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.video-item {
+  padding: 0 15px;
+}
+
+.video-card {
+  background-color: var(--dark-bg-card, #242424);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--dark-border, #333333);
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 120, 255, 0.3);
+}
+
+.video-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  background-color: #000;
+}
+
+.video-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover .video-thumbnail img {
+  transform: scale(1.1);
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: rgba(0, 120, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.play-overlay i {
+  font-size: 40px;
+  color: white;
+  margin-left: 5px; /* Ajuste visual para centralizar o ícone */
+}
+
+.video-card:hover .play-overlay {
+  background-color: rgba(0, 120, 255, 1);
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.video-info {
+  padding: 1.5rem;
+}
+
+.video-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark-text-primary, #e0e0e0);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.video-card:hover .video-title {
+  color: var(--color-primary, #0078ff);
+}
+
+.video-description {
+  color: var(--dark-text-secondary, #b0b0b0);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Remover scrollbars do carrossel */
+#videos-carousel,
+#videos-carousel .owl-stage-outer,
+#videos-carousel .owl-stage,
+#videos-carousel .owl-item {
+  overflow: hidden !important;
+}
+
+#videos-carousel .owl-stage-outer {
+  overflow: hidden !important;
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+
+#videos-carousel .owl-stage-outer::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari, Opera */
+}
+
+#videos-carousel {
+  overflow: hidden !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+#videos-carousel::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Owl Carousel Customização */
+#videos-carousel.owl-carousel .owl-item {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+#videos-carousel.owl-carousel .owl-item.active {
+  opacity: 1;
+}
+
+#videos-carousel.owl-carousel .owl-nav {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#videos-carousel.owl-carousel .owl-nav button {
+  background-color: var(--color-primary, #0078ff) !important;
+  color: white !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+#videos-carousel.owl-carousel .owl-nav button:hover {
+  background-color: var(--color-primary-dark, #0062d3) !important;
+  transform: scale(1.1);
+}
+
+#videos-carousel.owl-carousel .owl-dots {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#videos-carousel.owl-carousel .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4d4d4d !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 2px solid transparent !important;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#videos-carousel.owl-carousel .owl-dots .owl-dot:hover {
+  background-color: #6d6d6d !important;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+#videos-carousel.owl-carousel .owl-dots .owl-dot.active {
+  background-color: #0078ff !important;
+  width: 32px !important;
+  height: 10px !important;
+  border-radius: 5px !important;
+  opacity: 1 !important;
+  border: 2px solid #0078ff !important;
+  transform: scale(1);
+}
+
+/* Sobrescrever estilos do owl-theme para os dots */
+#videos-carousel.owl-theme .owl-dots .owl-dot span {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #4d4d4d !important;
+  margin: 0 !important;
+  border: 2px solid transparent !important;
+  transition: all 0.3s ease !important;
+  opacity: 0.6 !important;
+}
+
+#videos-carousel.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #6d6d6d !important;
+  opacity: 1 !important;
+  transform: scale(1.2) !important;
+}
+
+#videos-carousel.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #0078ff !important;
+  width: 32px !important;
+  height: 10px !important;
+  border-radius: 5px !important;
+  opacity: 1 !important;
+  border: 2px solid #0078ff !important;
+  transform: scale(1) !important;
+}
+
+/* Garantir que não há scrollbars em nenhum nível */
+.row .col-md-12,
+.videos-mf .container,
+.videos-mf .container .row {
+  overflow: hidden !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .video-info {
+    padding: 1rem;
+  }
+  
+  .video-title {
+    font-size: 1rem;
+  }
+  
+  .play-overlay {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .play-overlay i {
+    font-size: 30px;
+  }
+  
+  /* Remover scrollbars no mobile também */
+  #videos-carousel,
+  #videos-carousel .owl-stage-outer {
+    overflow: hidden !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+  }
+  
+  #videos-carousel::-webkit-scrollbar,
+  #videos-carousel .owl-stage-outer::-webkit-scrollbar {
+    display: none !important;
+  }
+}

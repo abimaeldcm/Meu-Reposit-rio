@@ -1,91 +1,133 @@
 <!DOCTYPE html>
-<!-- saved from url=(0038)https://themewagon.github.io/devfolio/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style data-merge-styles="true"></style>
-  <style data-merge-styles="true"></style><style data-merge-styles="true"></style>
-  <title>Abimael Mendes - Portifólio</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-  <!-- Favicons -->
-  <link href="https://themewagon.github.io/devfolio/img/favicon.png" rel="icon">
-  <link href="https://themewagon.github.io/devfolio/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Bootstrap CSS File -->
-  <link href="./DevFolio Bootstrap Template_files/bootstrap.min.css" rel="stylesheet">
-
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Abimael da Cruz Mendes - Desenvolvedor FullStack | C# | ASP.NET Core | Blazor</title>
+  <meta name="description" content="Desenvolvedor FullStack especializado em C#, ASP.NET Core, Blazor, SQL Server e PostgreSQL. Experiência em desenvolvimento web, APIs RESTful, microserviços e automações.">
+  <meta name="keywords" content="Desenvolvedor FullStack, C#, ASP.NET Core, Blazor, SQL Server, PostgreSQL, API REST, Desenvolvedor Web, .NET, Microserviços">
+  <meta name="author" content="Abimael da Cruz Mendes">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/abimaeldcm">
+  <meta property="og:title" content="Abimael da Cruz Mendes - Desenvolvedor FullStack">
+  <meta property="og:description" content="Desenvolvedor FullStack especializado em C#, ASP.NET Core, Blazor, SQL Server e PostgreSQL">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://github.com/abimaeldcm">
+  <meta property="twitter:title" content="Abimael da Cruz Mendes - Desenvolvedor FullStack">
+  <meta property="twitter:description" content="Desenvolvedor FullStack especializado em C#, ASP.NET Core, Blazor, SQL Server e PostgreSQL">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+  
+  <!-- Preconnect para performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  
   <!-- Libraries CSS Files -->
-  <link href="./DevFolio Bootstrap Template_files//font-awesome.min.css" rel="stylesheet">
-  <link href="./DevFolio Bootstrap Template_files/animate.min.css" rel="stylesheet">
-  <link href="./DevFolio Bootstrap Template_files/ionicons.min.css" rel="stylesheet">
-  <link href="./DevFolio Bootstrap Template_files/owl.carousel.min.css" rel="stylesheet">
-  <link href="./DevFolio Bootstrap Template_files/lightbox.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="./DevFolio Bootstrap Template_files/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: DevFolio
-    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -s-> 
+  <!-- Font Awesome via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPZ8yfq0uH0pJLZb1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/lightbox.min.css" rel="stylesheet">
+  
+  <!-- CSS Variables (deve vir antes do style.css) -->
+  <link href="css/variables.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!-- Custom Stylesheet (deve vir por último para sobrescrever) -->
+  <link href="css/custom.css" rel="stylesheet">
+  
+  <!-- Dark Theme -->
+  <link href="css/dark-theme.css" rel="stylesheet">
+  
+  <!-- Lightbox Fix -->
+  <link href="css/lightbox-fix.css" rel="stylesheet">
+  
+  <!-- Videos Carousel -->
+  <link href="css/videos-carousel.css" rel="stylesheet">
+  
+  <!-- Font Awesome Fix -->
+  <link href="css/fontawesome-fix.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
+  
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-  <!--/ Nav Star /-->
-  <nav class="navbar navbar-b navbar-expand-md fixed-top navbar-reduce" id="mainNav">
+  <!-- Navigation -->
+  <nav class="navbar navbar-b navbar-expand-md fixed-top navbar-trans" id="mainNav" role="navigation" aria-label="Navegação principal">
     <div class="container">
-      <a class="navbar-brand js-scroll" href="https://themewagon.github.io/devfolio/#page-top">Abimael</a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand js-scroll" href="#page-top" aria-label="Voltar ao início">
+        <img src="img/svg/csharp-svgrepo-com.svg" alt="C#" class="navbar-brand-icon">
+        Abimael Mendes
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Alternar navegação">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <div class="navbar-collapse justify-content-end collapse" id="navbarDefault" style="">
+      <div class="navbar-collapse justify-content-end collapse" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll active" href="#home">Início</a>
+            <a class="nav-link js-scroll active" href="#home" aria-current="page">Início</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#about">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Experiências</a>
+            <a class="nav-link js-scroll" href="#service">Competências</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Work</a>
+            <a class="nav-link js-scroll" href="#work">Experiências</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#blog">Blog</a>
+            <a class="nav-link js-scroll" href="#videos">Vídeos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contato</a>
+            <a class="nav-link js-scroll" href="#blog">Artigos</a>
+          </li>
+          <li class="nav-item">
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!--/ Nav End /-->
 
-  <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: url('./DevFolio Bootstrap Template_files/54916.jpg');">
-    <div class="overlay-itro"></div>
+  <!-- Intro Section -->
+  <section id="home" class="intro route bg-image" style="background-image: url('img/54916.jpg');" role="banner">
+    <div class="overlay-itro" aria-hidden="true"></div>
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
-          <p class="display-6 color-d">Hello, world!</p>
-          <h1 class="intro-title mb-4">Eu sou o Abimael Mendes</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Desenvolvedor Web,API RestFull</span><strong class="text-slider"></strong><span class="typed-cursor" style="animation-iteration-count: 0;"></span></p>
-          <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p>
+          <p class="display-6 color-d">Olá, mundo!</p>
+          <h1 class="intro-title mb-4">Eu sou Abimael da Cruz Mendes</h1>
+          <p class="intro-subtitle" style="font-size: 1.1rem;">
+            <strong>Desenvolvedor FullStack | C# | ASP.NET Core | Blazor | API RESTful | Microserviços</strong>
+          </p>
+          <p class="pt-3">
+            <a class="btn btn-primary btn js-scroll px-4" href="#about" role="button" aria-label="Saber mais sobre mim">Saiba Mais</a>
+          </p>
         </div>
       </div>
     </div>
-  </div>
-  <!--/ Intro Skew End /-->
+  </section>
 
-  <section id="about" class="about-mf sect-pt4 route">
+  <!-- About Section -->
+  <section id="about" class="about-mf sect-pt4 route" aria-labelledby="about-heading">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -95,48 +137,32 @@
                 <div class="row">
                   <div class="col-sm-6 col-md-5">
                     <div class="about-img">
-                      <img src="./DevFolio Bootstrap Template_files/JWF_8213.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      <img src="img/JWF_8213.jpg" class="img-fluid rounded b-shadow-a" alt="Foto de perfil de Abimael da Cruz Mendes" loading="lazy">
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-7">
                     <div class="about-info">
-                      <p><span class="title-s">Nome: </span> <span>Morgan Freeman</span></p>
-                      <p><span class="title-s">Perfil: </span> <span>Desenvolvedor Web</span></p>
-                      <p><span class="title-s">E-mail: </span> <span><a href="mailto:abimaelmends@hotmail.com">abimaelmends@hotmail.com</a></span></p>
-                      <p><span class="title-s">Telefone: </span> <span><a href="https://wa.me/558695287928" target="_blank">(86)995287928</a></span></p>
+                      <p><span class="title-s">Nome: </span> <span>Abimael da Cruz Mendes</span></p>
+                      <p><span class="title-s">Perfil: </span> <span>Desenvolvedor FullStack</span></p>
+                      <p><span class="title-s">E-mail: </span> <span><a href="mailto:abimaelmends@hotmail.com" aria-label="Enviar email para abimaelmends@hotmail.com">abimaelmends@hotmail.com</a></span></p>
+                      <p><span class="title-s">Telefone: </span> <span><a href="https://wa.me/5586995287928" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">(86) 99528-7928</a></span></p>
+                      <p><span class="title-s">Localização: </span> <span>Teresina, Piauí, Brasil</span></p>
                     </div>
-                  </div>
-                </div>
-                <div class="skill-mf">
-                  <p class="title-s">Skill</p>
-                  <span>HTML</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span>CSS3</span> <span class="pull-right">75%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span>PHP</span> <span class="pull-right">50%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="about-me pt-4 pt-md-0">
                   <div class="title-box-2">
-                    <h5 class="title-left">
+                    <h5 class="title-left" id="about-heading">
                       Sobre mim
                     </h5>
                   </div>
                   <p class="lead">
-                    Como desenvolvedor web, possuo expertise em ASP.NET, C#, MVC e RESTful API. Estou constantemente explorando novas tecnologias para aprimorar minhas habilidades. Com experiência em criar aplicações web e automações, estou sempre em busca de novos desafios para me manter atualizado e em constante crescimento profissional.
-                  </p>                  
+                    Sou desenvolvedor web com foco em tecnologias modernas do ecossistema .NET, como <strong>C#</strong>, <strong>ASP.NET Core</strong>, <strong>Blazor</strong> e <strong>Entity Framework Core</strong>, sempre prezando por código limpo, performance, manutenibilidade e boas práticas de desenvolvimento.
+                  </p>
+                  <p class="lead">
+                    Possuo experiência em arquitetura de aplicações, desenvolvimento de APIs REST, integração entre sistemas e persistência de dados. Também tenho familiaridade com ambientes em nuvem, como <strong>Azure</strong> e <strong>Google Cloud</strong>, conteinerização com <strong>Docker</strong> e metodologias ágeis, especialmente <strong>Scrum</strong>.
                   </p>
                 </div>
               </div>
@@ -147,482 +173,173 @@
     </div>
   </section>
 
-  <!--/ Section Services Star /-->
-  <section id="service" class="services-mf route">
+  <!-- Soft Skills Section -->
+  <section id="soft-skills" class="soft-skills-mf sect-pt4 route" aria-labelledby="soft-skills-heading">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div class="title-box text-center">
-            <h3 class="title-a">
-              Services
+            <h3 class="title-a" id="soft-skills-heading">
+              Soft Skills
             </h3>
             <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Principais competências e tecnologias que domino
             </p>
             <div class="line-mf"></div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-monitor"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-code-working"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Development</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-camera"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Photography</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Responsive Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Graphic Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-stats-bars"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Marketing Services</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ Section Services End /-->
-
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">450</p>
-              <span class="counter-text">WORKS COMPLETED</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">15</p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-people"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">550</p>
-              <span class="counter-text">TOTAL CLIENTS</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">36</p>
-              <span class="counter-text">AWARD WON</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--/ Section Portfolio Star /-->
-  <section id="work" class="portfolio-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Portfolio
-            </h3>
-            <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="./DevFolio Bootstrap Template_files/work-1.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="./DevFolio Bootstrap Template_files/work-1.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="./DevFolio Bootstrap Template_files/work-2.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="./DevFolio Bootstrap Template_files/work-2.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="./DevFolio Bootstrap Template_files/work-3.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="./DevFolio Bootstrap Template_files/work-3.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="./DevFolio Bootstrap Template_files/work-4.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="./DevFolio Bootstrap Template_files/work-4.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="./DevFolio Bootstrap Template_files/work-5.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="./DevFolio Bootstrap Template_files/work-5.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="./DevFolio Bootstrap Template_files/work-6.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="./DevFolio Bootstrap Template_files/work-6.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  <!--/ Section Portfolio End /-->
-
-  <!--/ Section Testimonials Star /-->
-  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div id="testimonial-mf" class="owl-carousel owl-theme owl-loaded owl-drag">
-            
-            
-          <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1130px, 0px, 0px); transition: all 0s ease 0s; width: 2260px;"><div class="owl-item" style="width: 1110px; margin-right: 20px;"><div class="testimonial-box">
-              <div class="author-test">
-                <img src="./DevFolio Bootstrap Template_files/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
-                <span class="author">Xavi Alonso</span>
-              </div>
-              <div class="content-test">
-                <p class="description lead">
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <span class="comit"><i class="fa fa-quote-right"></i></span>
-              </div>
-            </div></div><div class="owl-item active" style="width: 1110px; margin-right: 20px;"><div class="testimonial-box">
-              <div class="author-test">
-                <img src="./DevFolio Bootstrap Template_files/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
-                <span class="author">Marta Socrate</span>
-              </div>
-              <div class="content-test">
-                <p class="description lead">
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <span class="comit"><i class="fa fa-quote-right"></i></span>
-              </div>
-            </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--/ Section Blog Star /-->
-  <section id="blog" class="blog-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Blog
-            </h3>
-            <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="https://themewagon.github.io/devfolio/blog-single.html"><img src="./DevFolio Bootstrap Template_files/post-1.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Travel</h6>
+          <div class="skills-carousel-section">
+            <div id="skills-carousel" class="owl-carousel owl-theme skills-carousel">
+              <!-- Linguagens e Frameworks -->
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/csharp-svgrepo-com.svg" alt="C#" class="skill-svg-icon">
+                  <span class="skill-icon-name">C#</span>
                 </div>
               </div>
-              <h3 class="card-title"><a href="https://themewagon.github.io/devfolio/blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="https://themewagon.github.io/devfolio/#">
-                  <img src="./DevFolio Bootstrap Template_files/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="https://themewagon.github.io/devfolio/blog-single.html"><img src="./DevFolio Bootstrap Template_files/post-2.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Web Design</h6>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/dotnet-svgrepo-com.svg" alt="ASP.NET Core" class="skill-svg-icon">
+                  <span class="skill-icon-name">ASP.NET Core</span>
                 </div>
               </div>
-              <h3 class="card-title"><a href="https://themewagon.github.io/devfolio/blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="https://themewagon.github.io/devfolio/#">
-                  <img src="./DevFolio Bootstrap Template_files/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="https://themewagon.github.io/devfolio/blog-single.html"><img src="./DevFolio Bootstrap Template_files/post-3.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Web Design</h6>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/blazor-svgrepo-com.svg" alt="Blazor" class="skill-svg-icon">
+                  <span class="skill-icon-name">Blazor</span>
                 </div>
               </div>
-              <h3 class="card-title"><a href="https://themewagon.github.io/devfolio/blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="https://themewagon.github.io/devfolio/#">
-                  <img src="./DevFolio Bootstrap Template_files/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/python-svgrepo-com.svg" alt="Python" class="skill-svg-icon">
+                  <span class="skill-icon-name">Python</span>
+                </div>
               </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
+              <!-- ORMs e Acesso a Dados -->
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/entityframeworkcore-original.svg" alt="Entity Framework" class="skill-svg-icon">
+                  <span class="skill-icon-name">Entity Framework</span>
+                </div>
+              </div>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/entityframeworkcore-original.svg" alt="Dapper" class="skill-svg-icon">
+                  <span class="skill-icon-name">Dapper</span>
+                </div>
+              </div>
+              <!-- Front-end -->
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/html-tag-svgrepo-com.svg" alt="HTML" class="skill-svg-icon">
+                  <span class="skill-icon-name">HTML</span>
+                </div>
+              </div>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/css3-02-svgrepo-com.svg" alt="CSS" class="skill-svg-icon">
+                  <span class="skill-icon-name">CSS</span>
+                </div>
+              </div>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/js-svgrepo-com.svg" alt="JavaScript" class="skill-svg-icon">
+                  <span class="skill-icon-name">JavaScript</span>
+                </div>
+              </div>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/gnome-mime-text-x-csharp-svgrepo-com.svg" alt="Razor Pages" class="skill-svg-icon">
+                  <span class="skill-icon-name">Razor Pages</span>
+                </div>
+              </div>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/bootstrap-fill-svgrepo-com.svg" alt="Bootstrap" class="skill-svg-icon">
+                  <span class="skill-icon-name">Bootstrap</span>
+                </div>
+              </div>
+              <!-- Arquitetura -->
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/microservicos.svg" alt="Microsserviços" class="skill-svg-icon">
+                  <span class="skill-icon-name">Microsserviços</span>
+                </div>
+              </div>
+              
+              <!-- Bancos de Dados -->
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/dbs-sqlserver-svgrepo-com.svg" alt="SQL Server" class="skill-svg-icon">
+                  <span class="skill-icon-name">SQL Server</span>
+                </div>
+              </div>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <i class="fa fa-database" aria-hidden="true"></i>
+                  <span class="skill-icon-name">PostgreSQL</span>
+                </div>
+              </div>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/oracle-2-logo-svgrepo-com.svg" alt="Oracle" class="skill-svg-icon">
+                  <span class="skill-icon-name">Oracle</span>
+                </div>
+              </div>
+              <!-- Ferramentas e Plataformas -->
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/docker-svgrepo-com.svg" alt="Docker" class="skill-svg-icon">
+                  <span class="skill-icon-name">Docker</span>
+                </div>
+              </div>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <i class="fa fa-cloud" aria-hidden="true"></i>
+                  <span class="skill-icon-name">Azure</span>
+                </div>
+              </div>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/google-cloud-svgrepo-com.svg" alt="Google Cloud" class="skill-svg-icon">
+                  <span class="skill-icon-name">Google Cloud</span>
+                </div>
+              </div>
+              <!-- Controle de Versão -->
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/git-svgrepo-com.svg" alt="Git" class="skill-svg-icon">
+                  <span class="skill-icon-name">Git</span>
+                </div>
+              </div>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  <span class="skill-icon-name">GitHub</span>
+                </div>
+              </div>
+              <!-- Qualidade e Processos -->
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/test-svgrepo-com.svg" alt="Testes Unitários" class="skill-svg-icon">
+                  <span class="skill-icon-name">Testes Unitários</span>
+                </div>
+              </div>
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  <span class="skill-icon-name">Scrum</span>
+                </div>
+              </div>
+              <!-- Automação -->
+              <div class="skill-icon-item">
+                <div class="skill-icon-box">
+                  <img src="img/svg/automation-svgrepo-com.svg" alt="n8n" class="skill-svg-icon">
+                  <span class="skill-icon-name">n8n</span>
+                </div>
               </div>
             </div>
           </div>
@@ -630,136 +347,1189 @@
       </div>
     </div>
   </section>
-  <!--/ Section Blog End /-->
 
-  <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
-    <div class="overlay-mf"></div>
+  <!-- Services/Experiences Section -->
+  <section id="service" class="services-mf route" aria-labelledby="services-heading">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <div class="contact-mf">
-            <div id="contact" class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      Send Message Us
-                    </h5>
+          <div class="title-box text-center">
+            <h3 class="title-a" id="services-heading">
+              Competências
+            </h3>
+            <p class="subtitle-a">
+              Principais habilidades e tecnologias que domino
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa fa-code"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Desenvolvimento FullStack</h2>
+              <p class="s-description text-center">
+                Desenvolvimento de sistemas web completos utilizando ASP.NET Core, Blazor, C# e integração com bancos de dados SQL Server e PostgreSQL.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa fa-cloud"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">APIs RESTful & Microserviços</h2>
+              <p class="s-description text-center">
+                Implementação de APIs RESTful, arquitetura de microserviços e integração com diversos sistemas utilizando Entity Framework Core e Swagger.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa fa-desktop"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Desenvolvimento Blazor</h2>
+              <p class="s-description text-center">
+                Criação de interfaces modernas e interativas utilizando Blazor para aplicações web dinâmicas e de alta performance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa fa-cog"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Automações & Web Scraping</h2>
+              <p class="s-description text-center">
+                Desenvolvimento de bots e automações utilizando Python, Selenium, Beautiful Soup e Scrapy para otimização de processos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa fa-database"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Banco de Dados</h2>
+              <p class="s-description text-center">
+                Modelagem, otimização e manutenção de bancos de dados relacionais (SQL Server, PostgreSQL) com foco em performance e escalabilidade.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="fa fa-pencil"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Criação de Conteúdo</h2>
+              <p class="s-description text-center">
+                Produção de artigos técnicos, tutoriais e vídeos sobre inteligência artificial, C#/.NET e desenvolvimento de software.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="work" class="portfolio-mf sect-pt4 route" aria-labelledby="portfolio-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a" id="portfolio-heading">
+              Experiências Profissionais
+            </h3>
+            <p class="subtitle-a">
+              Empresas onde atuei e projetos desenvolvidos durante minha trajetória
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="#" class="experience-modal-trigger" 
+               data-toggle="modal" 
+               data-target="#experienceModal"
+               data-company="MetaNet"
+               data-title="Desenvolvedor FullStack"
+               data-period="2024 - 2026"
+               data-location="Home Office"
+               data-site="https://www.metanetsistemas.com.br/"
+               data-site-label="www.metanetsistemas.com.br"
+               data-details="Desenvolvimento e manutenção de sistemas para mais de 3.000 PDVs em supermercados e conveniências, utilizando .NET, C#, PostgreSQL e Blazor. Implementação de microserviços e arquitetura limpa, otimizando desempenho e escalabilidade. Responsável por melhorias no tempo de resposta, manutenções e refatoração de código, além de integrar procedimentos armazenados para gestão de postos e PDVs."
+               aria-label="Ver detalhes da experiência na MetaNet">
+              <div class="work-img">
+                <img src="img/meta net.jpg" alt="MetaNet - Desenvolvedor FullStack" class="img-fluid" loading="lazy" onerror="this.src='img/work-1.jpg'">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">MetaNet</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Desenvolvedor FullStack</span> / <span class="w-date">2024 - 2026</span>
+                    </div>
                   </div>
-                  <div>
-                      <form action="https://themewagon.github.io/devfolio/" method="post" role="form" class="contactForm">
-                      <div id="sendmessage">Your message has been sent. Thank you!</div>
-                      <div id="errormessage"></div>
-                      <div class="row">
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" spellcheck="false" data-ms-editor="true">
-                              <div class="validation"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" spellcheck="false" data-ms-editor="true"></textarea>
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                        </div>
-                      </div>
-                    </form>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="fa fa-plus" aria-hidden="true"></span>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="title-box-2 pt-4 pt-md-0">
-                    <h5 class="title-left">
-                      Get in Touch
-                    </h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="#" class="experience-modal-trigger" 
+               data-toggle="modal" 
+               data-target="#experienceModal"
+               data-company="XMail Agency"
+               data-title="Desenvolvedor FullStack"
+               data-period="2024 - 2025"
+               data-location="Home Office"
+               data-site="https://xmail.agency"
+               data-site-label="xmail.agency"
+               data-details="Responsável pelo desenvolvimento e manutenção de sites e aplicações web usando .NET, Razor, Blazor, SQL Server, HTML, CSS e JavaScript. Implementação de funcionalidades de front-end e back-end, garantindo integração perfeita entre as camadas, e comunicação com diversas APIs de gestão e pagamentos para assegurar correta integração e funcionamento. Otimização de desempenho e escalabilidade das aplicações."
+               aria-label="Ver detalhes da experiência na XMail Agency">
+              <div class="work-img">
+                <img src="img/Xmail.png" alt="XMail Agency - Desenvolvedor FullStack" class="img-fluid" loading="lazy" onerror="this.src='img/work-2.jpg'">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">XMail Agency</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Desenvolvedor FullStack</span> / <span class="w-date">2024 - 2025</span>
+                    </div>
                   </div>
-                  <div class="more-info">
-                    <p class="lead">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
-                      expedita aperiam aliquid at.
-                      Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
-                      mollitia inventore?
-                    </p>
-                    <ul class="list-ico">
-                      <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                      <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
-                      <li><span class="ion-email"></span> contact@example.com</li>
-                    </ul>
-                  </div>
-                  <div class="socials">
-                    <ul>
-                      <li><a href="https://themewagon.github.io/devfolio/"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-                      <li><a href="https://themewagon.github.io/devfolio/"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-                      <li><a href="https://themewagon.github.io/devfolio/"><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-                      <li><a href="https://themewagon.github.io/devfolio/"><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
-                    </ul>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="fa fa-plus" aria-hidden="true"></span>
+                    </div>
                   </div>
                 </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="#" class="experience-modal-trigger" 
+               data-toggle="modal" 
+               data-target="#experienceModal"
+               data-company="TEAEncontro"
+               data-title="Desenvolvedor FullStack"
+               data-period="2024 - 2024"
+               data-location="Home Office"
+               data-site="https://www.teaencontro.com.br/"
+               data-site-label="www.teaencontro.com.br"
+               data-details="Desenvolvi o site TEAEncontro, uma plataforma voltada para a comunidade autista, utilizando tecnologias como .NET, SQL Server, HTML, CSS, JavaScript e Bootstrap. Criei interfaces de usuários intuitivas e funcionais. Implementei funcionalidades de backend para gerenciar usuários, eventos e conteúdos, garantindo alta performance e segurança dos dados."
+               aria-label="Ver detalhes da experiência na TEAEncontro">
+              <div class="work-img">
+                <img src="img/TeaEncontro.jpg" alt="TEAEncontro - Desenvolvedor FullStack" class="img-fluid" loading="lazy" onerror="this.src='img/work-3.jpg'">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">TEAEncontro</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Desenvolvedor FullStack</span> / <span class="w-date">2024 - 2024</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="fa fa-plus" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="#" class="experience-modal-trigger" 
+               data-toggle="modal" 
+               data-target="#experienceModal"
+               data-company="AlgarTech"
+               data-title="Educador Empresarial"
+               data-period="2023 - 2024"
+               data-location="Home Office"
+               data-details="Criação de automações (bots) para as empresas Algartech e IFood para agilizar processos, utilizando técnicas como Web Crawler e Web Scraping. Bibliotecas incluem Selenium, Beautiful Soup, Scrapy, requests, pyautogui, pyperclip, pywinauto e AutoPy, Pandas. Essas ferramentas automatizam interações web, raspagem de dados e execução de tarefas, resultando em eficiência e redução de tempo de tarefas."
+               aria-label="Ver detalhes da experiência na AlgarTech">
+              <div class="work-img">
+                <img src="img/algartech.jpg" alt="AlgarTech - Desenvolvedor de Automações" class="img-fluid" loading="lazy">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">AlgarTech</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Desenvolvedor de Automações</span> / <span class="w-date">2023 - 2024</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="fa fa-plus" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="#" class="experience-modal-trigger" 
+               data-toggle="modal" 
+               data-target="#experienceModal"
+               data-company="Next Wave Education"
+               data-title="Redator de Conteúdo"
+               data-period="2024 - 2025"
+               data-location="Home Office"
+               data-site="https://nextwave.education/author/abimael-mendes/"
+               data-site-label="nextwave.education"
+               data-site-youtube="https://www.youtube.com/playlist?list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_"
+               data-details="Responsável pela criação de conteúdo especializado em inteligência artificial e C#/.Net, abrangendo pesquisa, redação e publicação de artigos informativos e instrutivos para desenvolvedores. Produzo materiais didáticos, incluindo vídeos tutoriais, que auxiliam na compreensão e aplicação de conceitos avançados de IA e desenvolvimento com C#."
+               aria-label="Ver detalhes da experiência na Next Wave Education">
+              <div class="work-img">
+                <img src="img/next_wave_education_logo.jpg" alt="Next Wave Education - Redator de Conteúdo" class="img-fluid" loading="lazy" onerror="this.src='img/work-6.jpg'">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Next Wave Education</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Redator de Conteúdo</span> / <span class="w-date">2024 - 2025</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="fa fa-plus" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos Carousel Section -->
+  <section id="videos" class="videos-mf sect-pt4 route" aria-labelledby="videos-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a" id="videos-heading">
+              Vídeos Tutoriais
+            </h3>
+            <p class="subtitle-a">
+              Tutoriais e projetos em vídeo sobre desenvolvimento .NET e C#
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="videos-carousel" class="owl-carousel owl-theme">
+            <!-- Vídeo 1 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=APS44wpNOkk&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/APS44wpNOkk/maxresdefault.jpg" alt="Query Splitting: Melhorando a performance de consultas com Entity Framework" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">8:54</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Query Splitting: Melhorando a performance...</h4>
+                    <p class="video-description">Aprenda como utilizar query splitting para melhorar significativamente o desempenho de suas consultas no Entity Framework, reduzindo o tempo de execução e otimizando o uso de recursos do banco de dados.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 2 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=mld0njY5dkA&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/mld0njY5dkA/maxresdefault.jpg" alt="Introdução às Migrations do Entity Framework" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">13:35</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Introdução às Migrations do Entity Framework</h4>
+                    <p class="video-description">Descubra como gerenciar o esquema do banco de dados usando Migrations no Entity Framework, permitindo controle de versão e evolução do modelo de dados de forma organizada e eficiente.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 3 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=NBx4HV8-a1w&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/NBx4HV8-a1w/maxresdefault.jpg" alt="IHttpClientFactory: Otimizando o uso do HttpClient em .NET" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">12:10</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">IHttpClientFactory: Otimizando o uso do HttpClient...</h4>
+                    <p class="video-description">Entenda como usar IHttpClientFactory corretamente para evitar problemas de socket exhaustion e melhorar o desempenho de suas requisições HTTP em aplicações .NET de alta concorrência.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 4 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=ihPfa4aS09I&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/ihPfa4aS09I/maxresdefault.jpg" alt="Raw SQL Queries no Entity Framework" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">15:14</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Raw SQL Queries no Entity Framework</h4>
+                    <p class="video-description">Explore como executar consultas SQL nativas diretamente no Entity Framework quando precisar de maior controle e performance em operações complexas do banco de dados.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 5 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=dQJTONwxi3Q&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/dQJTONwxi3Q/maxresdefault.jpg" alt="Documentando APIs ASP.NET com Swagger" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">22:37</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Documentando APIs ASP.NET com Swagger</h4>
+                    <p class="video-description">Configure o Swagger em suas APIs ASP.NET Core para gerar documentação interativa automática, facilitando o teste e a integração com outros sistemas de forma profissional.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 6 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=uzfj4OY3noU&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/uzfj4OY3noU/maxresdefault.jpg" alt="Utilizando cache em memória no ASP.NET" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">11:21</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Utilizando cache em memória no ASP.NET</h4>
+                    <p class="video-description">Aprenda a implementar cache em memória nas suas aplicações ASP.NET para reduzir a carga no banco de dados e aumentar significativamente a velocidade de resposta das requisições.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 7 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=V1IQdrhmOqU&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/V1IQdrhmOqU/maxresdefault.jpg" alt="Requisições HTTP com o Flurl em .NET" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">12:24</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Requisições HTTP com o Flurl em .NET</h4>
+                    <p class="video-description">Conheça o Flurl, uma biblioteca moderna e fluente para fazer requisições HTTP em .NET de forma mais legível e elegante, simplificando o código de integrações com APIs externas.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 8 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=r5YlHQHhrL4&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/r5YlHQHhrL4/maxresdefault.jpg" alt="Bulk Update e Delete no Entity Framework" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">13:08</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Bulk Update e Delete no Entity Framework</h4>
+                    <p class="video-description">Descubra técnicas avançadas para realizar operações de atualização e exclusão em massa no Entity Framework, otimizando performance quando você precisa modificar múltiplos registros simultaneamente.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 9 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=EMoBJsrLO-8&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/EMoBJsrLO-8/maxresdefault.jpg" alt="Executando stored procedures com Entity Framework" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">22:39</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Executando stored procedures com Entity Framework</h4>
+                    <p class="video-description">Veja como executar stored procedures do SQL Server através do Entity Framework Core, aproveitando lógica complexa já existente no banco de dados e mantendo compatibilidade com sistemas legados.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 10 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=fz1X8sHH2h4&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/fz1X8sHH2h4/maxresdefault.jpg" alt="Collection expressions: simplificando a criação de coleções em C#" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">11:17</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Collection expressions: simplificando...</h4>
+                    <p class="video-description">Explore as collection expressions, uma nova funcionalidade do C# que simplifica e torna mais elegante a criação de arrays, listas e outras coleções no código.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 11 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=xdl2jofS1B8&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/xdl2jofS1B8/maxresdefault.jpg" alt="Null coalescing operators em C#" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">9:49</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Null coalescing operators em C#</h4>
+                    <p class="video-description">Aprenda a usar os operadores null coalescing do C# para lidar com valores nulos de forma eficiente e escrever código mais limpo e seguro em suas aplicações.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 12 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=xItk0cXLjvY&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/xItk0cXLjvY/maxresdefault.jpg" alt="Lendo e escrevendo arquivos de texto em C#" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">7:44</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Lendo e escrevendo arquivos de texto em C#</h4>
+                    <p class="video-description">Tutorial completo sobre como ler e escrever arquivos de texto em C# usando classes do .NET, incluindo tratamento de erros e boas práticas de manipulação de arquivos.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 13 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=5djH_ev6gLI&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/5djH_ev6gLI/maxresdefault.jpg" alt="Interpolação de strings em C#" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">10:08</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Interpolação de strings em C#</h4>
+                    <p class="video-description">Descubra como usar interpolação de strings no C# para criar mensagens formatadas de forma mais legível e performática do que concatenação tradicional.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 14 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=6t-Dq8ztwIY&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/6t-Dq8ztwIY/maxresdefault.jpg" alt="Realizando requisições HTTP com HttpClient" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">11:09</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Realizando requisições HTTP com HttpClient</h4>
+                    <p class="video-description">Guia prático sobre como fazer requisições HTTP usando HttpClient em .NET, incluindo configuração, tratamento de erros e melhores práticas para consumo de APIs.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 15 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=S2CIKpgZfHc&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/S2CIKpgZfHc/maxresdefault.jpg" alt="Funções de agregação no LINQ" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">10:28</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Funções de agregação no LINQ</h4>
+                    <p class="video-description">Aprenda a usar funções de agregação no LINQ como Sum, Average, Min e Max para realizar cálculos e análises em coleções de dados de forma simples e eficiente.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 16 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=bc8VjmdjQ5A&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/bc8VjmdjQ5A/maxresdefault.jpg" alt=".NET CLI: um guia rápido" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">8:41</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">.NET CLI: um guia rápido</h4>
+                    <p class="video-description">Conheça os principais comandos da CLI do .NET para criar projetos, gerenciar pacotes NuGet e executar tarefas de desenvolvimento sem precisar de uma IDE.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 17 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=yY5XCIPzL8Y&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/yY5XCIPzL8Y/maxresdefault.jpg" alt="Colunas calculadas com Entity Framework" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">8:03</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Colunas calculadas com Entity Framework</h4>
+                    <p class="video-description">Veja como criar colunas calculadas no Entity Framework Core usando Value Conversions e Fluent API para armazenar dados derivados diretamente no banco de dados.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 18 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=kXEamfDdrdw&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/kXEamfDdrdw/maxresdefault.jpg" alt="OpenAI Vision: Descrevendo imagens em C#" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">13:08</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">OpenAI Vision: Descrevendo imagens em C#</h4>
+                    <p class="video-description">Implemente a API Vision da OpenAI em C# para descrever e analisar imagens usando inteligência artificial, criando aplicações com reconhecimento visual avançado.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 19 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=am5ZoDLgY9Y&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/am5ZoDLgY9Y/maxresdefault.jpg" alt="Agrupando consultas com LINQ em C#" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">5:29</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Agrupando consultas com LINQ em C#</h4>
+                    <p class="video-description">Aprenda a usar GroupBy no LINQ para agrupar dados em coleções conforme critérios específicos, organizando informações de forma lógica e facilitando análises complexas.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 20 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=FhPLgRbw0rM&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/FhPLgRbw0rM/maxresdefault.jpg" alt="Primary constructors em C#" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">8:25</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Primary constructors em C#</h4>
+                    <p class="video-description">Entenda como usar primary constructors no C# 12 para simplificar a declaração de classes e structs, reduzindo código boilerplate e melhorando a legibilidade.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 21 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=F2UZFuBYN1s&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/F2UZFuBYN1s/maxresdefault.jpg" alt="Moderação de conteúdo com a OpenAI em .NET" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">8:43</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Moderação de conteúdo com a OpenAI em .NET</h4>
+                    <p class="video-description">Implemente moderação de conteúdo usando a API da OpenAI em .NET para detectar conteúdo inadequado, garantindo segurança e qualidade nas interações dos usuários.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 22 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=vLTWZy4E7wc&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/vLTWZy4E7wc/maxresdefault.jpg" alt="Formatando números em C#" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">14:55</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Formatando números em C#</h4>
+                    <p class="video-description">Descubra como formatar números em C# usando diferentes formatos culturais, incluindo moeda, porcentagem e decimais, para apresentar dados ao usuário de forma profissional.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 23 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=fQSbOW9MN4Q&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/fQSbOW9MN4Q/maxresdefault.jpg" alt="Como implementar Soft Delete com Entity Framework" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">11:18</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Como implementar Soft Delete com Entity Framework</h4>
+                    <p class="video-description">Aprenda a implementar Soft Delete no Entity Framework Core para marcar registros como deletados sem removê-los fisicamente, preservando histórico e permitindo recuperação.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 24 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=5Bh6PG2qJa0&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/5Bh6PG2qJa0/maxresdefault.jpg" alt="Métodos de busca em strings no C#" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">10:33</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Métodos de busca em strings no C#</h4>
+                    <p class="video-description">Explore os principais métodos para buscar e manipular strings em C#, incluindo Contains, IndexOf, StartsWith e EndsWith, essenciais para processamento de texto.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 25 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=DxFsC6aowLI&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/DxFsC6aowLI/maxresdefault.jpg" alt="Métodos para recuperar um único registro no LINQ" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">11:41</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Métodos para recuperar um único registro no LINQ</h4>
+                    <p class="video-description">Entenda a diferença entre First, FirstOrDefault, Single e SingleOrDefault no LINQ e quando usar cada um para recuperar registros únicos de forma segura.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 26 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=kuHyWplWiFE&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/kuHyWplWiFE/maxresdefault.jpg" alt="Formatando datas e horas em C# com a classe DateTime" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">10:57</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Formatando datas e horas em C# com DateTime</h4>
+                    <p class="video-description">Guia completo sobre formatação de datas e horas em C# usando DateTime, incluindo formatos personalizados e diferentes culturas para exibição adequada ao usuário.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 27 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=LCGB_6mGV14&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/LCGB_6mGV14/maxresdefault.jpg" alt="Três métodos LINQ essenciais para o desenvolvedor .NET" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">7:09</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Três métodos LINQ essenciais para o desenvolvedor .NET</h4>
+                    <p class="video-description">Conheça os três métodos LINQ mais importantes que todo desenvolvedor .NET deve dominar para manipular coleções de dados de forma eficiente e elegante.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 28 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=Qt4_sxsMJLk&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/Qt4_sxsMJLk/maxresdefault.jpg" alt="N8N + IA + WhatsApp: análise de imagens e respostas automáticas" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">5:02</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">N8N + IA + WhatsApp</h4>
+                    <p class="video-description">Tutorial completo sobre como integrar N8N com inteligência artificial e WhatsApp para criar chatbots que analisam imagens e respondem automaticamente aos usuários.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 29 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=7hneKxe3Yk0&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/7hneKxe3Yk0/maxresdefault.jpg" alt="Sistema PDV em Blazor .Net" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">3:52</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Sistema PDV em Blazor .Net</h4>
+                    <p class="video-description">Demonstração de um sistema de ponto de venda desenvolvido com Blazor e .NET, mostrando funcionalidades de gestão de vendas e interface web moderna.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 30 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=dxFxIWqdHK4&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/dxFxIWqdHK4/maxresdefault.jpg" alt="Usando o ChatGPT em uma aplicação .Net" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">4:23</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Usando o ChatGPT em uma aplicação .Net</h4>
+                    <p class="video-description">Aprenda a integrar o ChatGPT em aplicações .NET para adicionar funcionalidades de inteligência artificial e processamento de linguagem natural nos seus projetos.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 31 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=I1gUjNS82Zc&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/I1gUjNS82Zc/maxresdefault.jpg" alt="Integrando uma aplicação em .Net com a API do ChatGPT" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">4:46</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Integrando .Net com API do ChatGPT</h4>
+                    <p class="video-description">Passo a passo detalhado sobre como integrar a API do ChatGPT em uma aplicação .NET, incluindo autenticação, chamadas HTTP e tratamento de respostas.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 32 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=EVdJ3AjLozo&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/EVdJ3AjLozo/maxresdefault.jpg" alt="API ChatGPT com .Net/C#" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">1:14</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">API ChatGPT com .Net/C#</h4>
+                    <p class="video-description">Guia prático sobre como consumir a API do ChatGPT usando C# e .NET, criando aplicações que utilizam inteligência artificial para gerar texto e respostas inteligentes.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 33 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=T-OAnHipSos&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/T-OAnHipSos/maxresdefault.jpg" alt="API + FrontEnd Consultório Médico" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">6:37</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">API + FrontEnd Consultório Médico</h4>
+                    <p class="video-description">Projeto completo de sistema de consultório médico desenvolvido com API .NET e frontend web, demonstrando funcionalidades de agendamento e gestão de pacientes.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 34 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=qJJ7VMYLBkg&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/qJJ7VMYLBkg/maxresdefault.jpg" alt="Sistema Escolar - Edu Station" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">6:07</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Sistema Escolar - Edu Station</h4>
+                    <p class="video-description">Apresentação do sistema escolar Edu Station desenvolvido com .NET, incluindo gestão de alunos, professores, turmas e funcionalidades administrativas completas.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 35 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=OQWDdus_Avc&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/OQWDdus_Avc/maxresdefault.jpg" alt="API .NET de Gerenciamento de Produtos" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">3:39</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">API .NET de Gerenciamento de Produtos</h4>
+                    <p class="video-description">Tutorial sobre criação de uma API RESTful em .NET para gerenciamento de produtos, incluindo operações CRUD completas e boas práticas de desenvolvimento.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Vídeo 36 -->
+            <div class="video-item">
+              <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=bisgcfBRLMg&list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" class="video-link">
+                  <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/bisgcfBRLMg/maxresdefault.jpg" alt="Sistema de marcação de Pontos" class="img-fluid" loading="lazy">
+                    <div class="play-overlay"><i class="fa fa-play-circle"></i></div>
+                    <div class="video-duration">5:07</div>
+                  </div>
+                  <div class="video-info">
+                    <h4 class="video-title">Sistema de marcação de Pontos</h4>
+                    <p class="video-description">Demonstração de sistema de controle de ponto desenvolvido com .NET para registro de entrada e saída de funcionários, incluindo relatórios e gestão de horas trabalhadas.</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <footer>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog-mf sect-pt4 route" aria-labelledby="blog-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a" id="blog-heading">
+              Artigos e Conteúdo
+            </h3>
+            <p class="subtitle-a">
+              Conteúdos técnicos sobre C#/.NET e Inteligência Artificial
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <article class="card card-blog">
+            <div class="card-img">
+              <a href="https://nextwave.education/author/abimael-mendes/" target="_blank" rel="noopener noreferrer" aria-label="Abrir artigos na Next Wave Education">
+                <img src="img/artigos.jpg" alt="Artigos sobre C# e .NET" class="img-fluid" loading="lazy">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Tecnologia</h6>
+                </div>
+              </div>
+              <h3 class="card-title">
+                <a href="https://nextwave.education/author/abimael-mendes/" target="_blank" rel="noopener noreferrer">Artigos sobre C# e .NET</a>
+              </h3>
+              <p class="card-description">
+                Artigos técnicos e instrutivos sobre desenvolvimento com C#, ASP.NET Core, Blazor e tecnologias Microsoft para desenvolvedores.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <span class="author">Abimael Mendes</span>
+              </div>
+              <div class="post-date">
+                <span class="fa fa-clock-o" aria-hidden="true"></span> Artigos
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card card-blog">
+            <div class="card-img">
+              <a href="https://www.youtube.com/playlist?list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer" aria-label="Abrir canal do YouTube Next Wave Education">
+                <img src="img/videos.jpg" alt="Vídeos tutoriais sobre desenvolvimento" class="img-fluid" loading="lazy">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Educação</h6>
+                </div>
+              </div>
+              <h3 class="card-title">
+                <a href="https://www.youtube.com/playlist?list=PLHiCHRrgTeUG9VOkr2oZ3kA7HgWxwHjU_" target="_blank" rel="noopener noreferrer">Vídeos Tutoriais</a>
+              </h3>
+              <p class="card-description">
+                Vídeos didáticos sobre conceitos avançados de IA, C#/.NET e desenvolvimento de software para auxiliar desenvolvedores.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <span class="author">Abimael Mendes</span>
+              </div>
+              <div class="post-date">
+                <span class="fa fa-clock-o" aria-hidden="true"></span> Vídeos
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card card-blog">
+            <div class="card-img">
+              <a href="https://github.com/abimaeldcm" target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil do GitHub">
+                <img src="img/github.jpg" alt="Projetos open source no GitHub" class="img-fluid" loading="lazy">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Open Source</h6>
+                </div>
+              </div>
+              <h3 class="card-title">
+                <a href="https://github.com/abimaeldcm" target="_blank" rel="noopener noreferrer">Projetos no GitHub</a>
+              </h3>
+              <p class="card-description">
+                Repositórios com projetos de código aberto, exemplos de APIs REST, aplicações Blazor e muito mais.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <span class="author">Abimael Mendes</span>
+              </div>
+              <div class="post-date">
+                <span class="fa fa-clock-o" aria-hidden="true"></span> GitHub
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer role="contentinfo" class="footer-paralax sect-mt4">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="copyright-box">
-              <p class="copyright">© Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+              <p class="copyright">© Copyright <strong id="current-year">2025</strong> <strong>Abimael da Cruz Mendes</strong>. Todos os direitos reservados.</p>
               <div class="credits">
-                <!--
-                  All the links in the footer should remain intact.
-                  You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-                -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Desenvolvido com dedicação por Abimael Mendes
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
-  </section>
-  <!--/ Section Contact-footer End /-->
 
-  <a href="https://themewagon.github.io/devfolio/#" class="back-to-top" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
-  
+  <!-- Back to top button -->
+  <a href="#page-top" class="back-to-top" aria-label="Voltar ao topo" style="display: none;">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- Modal de Experiência Profissional -->
+  <div class="modal fade" id="experienceModal" tabindex="-1" role="dialog" aria-labelledby="experienceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="experienceModalLabel">Experiência Profissional</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="experience-details">
+            <h3 class="experience-company" id="modalCompany"></h3>
+            <div class="experience-header mb-3">
+              <span class="experience-title badge badge-primary" id="modalTitle"></span>
+              <span class="experience-period" id="modalPeriod"></span>
+              <span class="experience-location" id="modalLocation"></span>
+            </div>
+            <div class="experience-site mb-3" id="modalSiteContainer" style="display: none;">
+              <strong>Site:</strong> <a href="#" id="modalSite" target="_blank" rel="noopener noreferrer" class="site-link"></a>
+            </div>
+            <div class="experience-site-youtube mb-3" id="modalSiteYoutubeContainer" style="display: none;">
+              <strong>Vídeos:</strong> <a href="#" id="modalSiteYoutube" target="_blank" rel="noopener noreferrer" class="site-link youtube-link"><i class="fa fa-youtube-play"></i> YouTube Playlist</a>
+            </div>
+            <div class="experience-description">
+              <p id="modalDetails"></p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- JavaScript Libraries -->
-  <script src="./DevFolio Bootstrap Template_files/jquery.min.js"></script>
-  <script src="./DevFolio Bootstrap Template_files/jquery-migrate.min.js"></script>
-  <script src="./DevFolio Bootstrap Template_files/popper.min.js"></script>
-  <script src="./DevFolio Bootstrap Template_files/bootstrap.min.js"></script>
-  <script src="./DevFolio Bootstrap Template_files/easing.min.js"></script>
-  <script src="./DevFolio Bootstrap Template_files/jquery.waypoints.min.js"></script>
-  <script src="./DevFolio Bootstrap Template_files/jquery.counterup.js"></script>
-  <script src="./DevFolio Bootstrap Template_files/owl.carousel.min.js"></script>
-  <script src="./DevFolio Bootstrap Template_files/lightbox.min.js"></script>
-  <script src="./DevFolio Bootstrap Template_files/typed.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/easing.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script src="js/typed.min.js"></script>
+  
   <!-- Contact Form JavaScript File -->
-  <script src="./DevFolio Bootstrap Template_files/contactform.js"></script>
-
+  <script src="js/contactform.js"></script>
+  
   <!-- Template Main Javascript File -->
-  <script src="./DevFolio Bootstrap Template_files/main.js"></script>
+  <script src="js/main.js"></script>
+  
+  <!-- Custom Scripts -->
+  <script>
+    // Populando o modal de experiência profissional
+    $(document).on('click', '.experience-modal-trigger', function(e) {
+      e.preventDefault();
+      
+      var $trigger = $(this);
+      var company = $trigger.data('company');
+      var title = $trigger.data('title');
+      var period = $trigger.data('period');
+      var location = $trigger.data('location');
+      var site = $trigger.data('site');
+      var siteLabel = $trigger.data('site-label');
+      var siteYoutube = $trigger.data('site-youtube');
+      var details = $trigger.data('details');
+      
+      // Preencher modal
+      $('#modalCompany').text(company);
+      $('#modalTitle').text(title);
+      $('#modalPeriod').text(period);
+      $('#modalLocation').text(' — ' + location);
+      $('#modalDetails').text(details);
+      
+      // Exibir/esconder site
+      if (site && site !== '') {
+        $('#modalSite').attr('href', site);
+        $('#modalSite').text(siteLabel || site);
+        $('#modalSiteContainer').show();
+      } else {
+        $('#modalSiteContainer').hide();
+      }
+      
+      // Exibir/esconder YouTube (especial para Next Wave Education)
+      if (siteYoutube && siteYoutube !== '') {
+        $('#modalSiteYoutube').attr('href', siteYoutube);
+        $('#modalSiteYoutubeContainer').show();
+      } else {
+        $('#modalSiteYoutubeContainer').hide();
+      }
+      
+      // Abrir modal
+      $('#experienceModal').modal('show');
+    });
 
+    // Verificar se Font Awesome carregou
+    function checkFontAwesome() {
+      const testIcon = document.createElement('i');
+      testIcon.className = 'fa fa-check';
+      testIcon.style.position = 'absolute';
+      testIcon.style.visibility = 'hidden';
+      document.body.appendChild(testIcon);
+      
+      const computedStyle = window.getComputedStyle(testIcon, ':before');
+      const fontFamily = computedStyle.getPropertyValue('font-family');
+      
+      if (!fontFamily || !fontFamily.includes('FontAwesome')) {
+        console.warn('Font Awesome não carregou via CDN. Tentando carregar fontes diretamente...');
+        // Font Awesome não carregou, mas o CSS fix deve resolver
+      }
+      
+      document.body.removeChild(testIcon);
+    }
+    
+    // Atualizar ano no footer dinamicamente
+    document.addEventListener('DOMContentLoaded', function() {
+      // Verificar Font Awesome após um pequeno delay
+      setTimeout(checkFontAwesome, 1000);
+      
+      const yearElement = document.getElementById('current-year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+      
+      // Lazy loading - marcar imagens como carregadas
+      const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+      if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver(function(entries, observer) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.classList.add('loaded');
+              imageObserver.unobserve(img);
+            }
+          });
+        });
+        
+        lazyImages.forEach(function(img) {
+          imageObserver.observe(img);
+        });
+      } else {
+        // Fallback para navegadores antigos
+        lazyImages.forEach(function(img) {
+          img.classList.add('loaded');
+        });
+      }
+      
+      // Forçar exibição de ícones após carregamento
+      const allIcons = document.querySelectorAll('.fa, [class*="fa-"], i[class*="fa"]');
+      allIcons.forEach(function(icon) {
+        icon.style.display = 'inline-block';
+        icon.style.fontFamily = 'FontAwesome';
+        icon.style.fontStyle = 'normal';
+        icon.style.fontWeight = 'normal';
+      });
+    });
+  </script>
 
-
-<div id="lightboxOverlay" class="lightboxOverlay" style="width: 2543px; height: 6494px; display: none;"></div><div id="lightbox" class="lightbox" style="top: 3050px; left: 0px; display: none;"><div class="lb-outerContainer" style="width: 968px; height: 608px;"><div class="lb-container"><img class="lb-image" src="./DevFolio Bootstrap Template_files/work-3.jpg" style="width: 968px; height: 608px;"><div class="lb-nav" style=""><a class="lb-prev" href="https://themewagon.github.io/devfolio/" style=""></a><a class="lb-next" href="https://themewagon.github.io/devfolio/" style=""></a></div><div class="lb-loader" style="opacity: 0.00996395; display: none;"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer" style="width: 968px;"><div class="lb-data"><div class="lb-details"><span class="lb-caption" style="display: none;"></span><span class="lb-number">Image 3 of 6</span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div><div><div style="display: none; position: fixed; top: 30px; width: auto; max-width: 100%; text-align: center; left: 50%; transform: translateX(-50%); z-index: 99999999;"><div style="display: inline-block; font-size: 14px; font-weight: bold; border: 1px solid rgb(240, 195, 109); background-color: rgb(249, 237, 190); padding: 0px 10px; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;"></div></div></div></body><editor-card style="position:absolute;top:0px;left:0px;z-index:auto;display: block !important"><div dir="ltr" style="all: initial;"><div style="color-scheme: initial; forced-color-adjust: initial; mask: initial; math-depth: initial; position: absolute; position-anchor: initial; appearance: initial; color: initial; font: initial; font-palette: initial; font-synthesis: initial; inset-area: initial; text-orientation: initial; text-rendering: initial; text-spacing-trim: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; anchor-name: initial; animation-composition: initial; animation: initial; app-region: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; field-sizing: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask-type: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overlay: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position-try: initial; position-visibility: initial; quotes: initial; r: initial; resize: initial; rotate: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-timeline: initial; scrollbar-color: initial; scrollbar-gutter: initial; scrollbar-width: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; white-space: initial; timeline-scope: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-transition-class: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"><link rel="stylesheet" href="chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/fonts/fabric-icons.css"><div style="all: initial;"><template shadowrootmode="open"></template></div></div><div style="color-scheme: initial; forced-color-adjust: initial; mask: initial; math-depth: initial; position: absolute; position-anchor: initial; appearance: initial; color: initial; font: initial; font-palette: initial; font-synthesis: initial; inset-area: initial; text-orientation: initial; text-rendering: initial; text-spacing-trim: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; anchor-name: initial; animation-composition: initial; animation: initial; app-region: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; field-sizing: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask-type: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overlay: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position-try: initial; position-visibility: initial; quotes: initial; r: initial; resize: initial; rotate: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-timeline: initial; scrollbar-color: initial; scrollbar-gutter: initial; scrollbar-width: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; white-space: initial; timeline-scope: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-transition-class: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"><link rel="stylesheet" href="chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/fonts/fabric-icons.css"></div></div></editor-card></html>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* Fix para imagens do lightbox que não estão carregando */
+
+/* Usar ícones Font Awesome ao invés de imagens PNG */
+.lb-nav a.lb-prev,
+.lb-nav a.lb-next {
+  background: transparent !important;
+  width: 50px !important;
+  height: 100% !important;
+  opacity: 0.8 !important;
+}
+
+.lb-nav a.lb-prev:before {
+  content: '\f104' !important; /* Font Awesome left arrow */
+  font-family: FontAwesome !important;
+  font-size: 40px !important;
+  color: white !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 10px !important;
+  transform: translateY(-50%) !important;
+}
+
+.lb-nav a.lb-next:before {
+  content: '\f105' !important; /* Font Awesome right arrow */
+  font-family: FontAwesome !important;
+  font-size: 40px !important;
+  color: white !important;
+  position: absolute !important;
+  top: 50% !important;
+  right: 10px !important;
+  transform: translateY(-50%) !important;
+}
+
+.lb-loader {
+  background: transparent !important;
+}
+
+.lb-loader:before {
+  content: '\f110' !important; /* Font Awesome spinner */
+  font-family: FontAwesome !important;
+  font-size: 40px !important;
+  color: white !important;
+  animation: fa-spin 2s infinite linear !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.lb-close {
+  background: transparent !important;
+  width: 35px !important;
+  height: 35px !important;
+  right: 20px !important;
+  top: 20px !important;
+}
+
+.lb-close:before {
+  content: '\f00d' !important; /* Font Awesome times/close */
+  font-family: FontAwesome !important;
+  font-size: 35px !important;
+  color: white !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+@keyframes fa-spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
