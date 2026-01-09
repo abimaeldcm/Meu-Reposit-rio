@@ -407,14 +407,126 @@ p, span, div {
 .footer-paralax {
   background-color: #1a1a1a;
   color: #b0b0b0;
+  padding: 3rem 0 2rem;
+}
+
+.footer-contact {
+  border-bottom: 1px solid #3d3d3d;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.footer-contact-title h5 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-contact-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #b0b0b0;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  background-color: #2d2d2d;
+  border: 2px solid #3d3d3d;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-contact-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 120, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.footer-contact-icon:hover::before {
+  left: 100%;
+}
+
+.footer-contact-icon i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #0078ff;
+  transition: all 0.3s ease;
+}
+
+.footer-contact-icon .footer-contact-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.footer-contact-icon:hover {
+  background-color: #333333;
+  border-color: #0078ff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 120, 255, 0.2);
+  color: #ffffff;
+}
+
+.footer-contact-icon:hover i {
+  color: #4da3ff;
+  transform: scale(1.2);
+}
+
+.footer-contact-icon:hover .footer-contact-text {
+  color: #ffffff;
 }
 
 .copyright {
   color: #b0b0b0;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .credits {
   color: #808080;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsividade para footer */
+@media (max-width: 768px) {
+  .footer-contact-icons {
+    gap: 1rem;
+  }
+  
+  .footer-contact-icon {
+    min-width: 100px;
+    padding: 0.8rem 1rem;
+  }
+  
+  .footer-contact-icon i {
+    font-size: 1.5rem;
+  }
+  
+  .footer-contact-text {
+    font-size: 0.8rem;
+  }
 }
 
 /* Ajustes para intro section */
